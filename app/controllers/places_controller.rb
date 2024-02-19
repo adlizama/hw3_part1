@@ -6,6 +6,10 @@ def index
   
 end
 
+def show
+  #find a place
+end
+
 def new
   @place = Place.new
 
@@ -20,11 +24,9 @@ def create
   @place["name"] = params["name"]
 
   #save Place row
-
   @place.save
 
   #redirect user
-  
   redirect_to "/places"
 
 
