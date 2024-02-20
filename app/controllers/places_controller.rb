@@ -8,6 +8,7 @@ end
 
 def show
   #find a place
+  @place = Place.find_by({"id" => params["id"]})
 end
 
 def new
