@@ -4,7 +4,7 @@
 
 <ul>
   <% for place in @place %>
-    <li><%= place["name"]%></li>
+    <a href="/places/<%=place["id"]%>"><%= place["name"] %>
   <% end %>
 </ul>
 
