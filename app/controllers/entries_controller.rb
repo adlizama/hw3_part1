@@ -26,7 +26,7 @@ class EntriesController < ApplicationController
     @entry.save
 
     #redirect user  
-    redirect to "/places"
+    redirect_to "/places"
   end
 
   def show
