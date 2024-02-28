@@ -6,7 +6,11 @@
 
 <ul>
   <% for entry in @entry%>
-    <li><%= entry["title"] %></li>
+    <li>
+    <%= entry["title"]%>
+    <%= entry["description"]%>
+    <%= entry["posted_on"] %>
+    </li>
   <% end %>
 </ul>
  
