@@ -2,9 +2,19 @@
 
 <form action="/entries" method="post">
   <p>
-    <label for="title">Place Name</label>
+    <label for="title">Entry Title</label>
     <input type="text" name="title" id="title">
   </p>
+
+  <p>
+    <label for="description">Entry Description</label>
+    <input type="text" name="description" id="description">
+  </p>
+  
+  <p>
+    <label for="posted_on">Entry Date</label>
+    <input type="date" name="posted_on" id="posted_on">
+  </p>  
 
   <button>Submit</button>
 </form>
