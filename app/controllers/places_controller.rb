@@ -9,6 +9,7 @@ end
 def show
   #find a place
   @place = Place.find_by({"id" => params["id"]})
+  @entry = Entry.where({"place_id" => @place["id"]})
 end
 
 
@@ -20,6 +21,7 @@ def create
 
   #assign user-entered form data to Place's columns
   @place["name"] = params["name"]
+  
 
   #save Place row
   @place.save
