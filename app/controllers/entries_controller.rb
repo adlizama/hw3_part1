@@ -5,6 +5,10 @@ class EntriesController < ApplicationController
     render :inline => "<h1>Welcome Entry Enthusiast</h1>"
   end
 
+  def new
+    @entry = Entry.new
+  end
+
   def create
     #start with new entry
     @entry = Entry.new
@@ -14,7 +18,7 @@ class EntriesController < ApplicationController
     @entry["description"] = params["description"]
     @entry["posted_on"] = params["posted_on"]
     
-    #save Entry ow
+    #save Enter row
     @entry.save
 
     #redirect user  
