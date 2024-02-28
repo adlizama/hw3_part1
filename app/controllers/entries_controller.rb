@@ -18,6 +18,10 @@ class EntriesController < ApplicationController
     @entry["description"] = params["description"]
     @entry["posted_on"] = params["posted_on"]
     
+
+    #assign relationship between Place and Entry
+    @entry["place_id"] = params
+
     #save Enter row
     @entry.save
 
